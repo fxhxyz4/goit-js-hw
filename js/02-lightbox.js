@@ -21,18 +21,9 @@ function createMarkup() {
 galleryEl.insertAdjacentHTML("beforeend", itemEl);
 
 // слушатель события для "galleryEl"
-galleryEl.addEventListener("click", onClick);
-
-// preventDefault() и "keydown"
-function onClick(e) {
+galleryEl.addEventListener("click", (e) => {
 	e.preventDefault();
-
-	document.addEventListener("keydown", (e) => {
-		if (e.code === "Escape") {
-			imgCrt.close();
-		}
-	});
-}
+});
 
 let lightbox = new SimpleLightbox(".gallery__item", {
 	captions: true,
