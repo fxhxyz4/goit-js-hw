@@ -1,24 +1,31 @@
 {
-  "name": "parcel-project-template",
-  "version": "2.0.0",
-  "description": "",
-  "homepage": "https://goitacademy.github.io/parcel-project-template",
+  "name": "goit-js-hw-10",
+  "version": "2.0.1",
+  "description": "goit-js-hw-10",
+  "homepage": "https://fxhxyz.vercel.app/",
   "scripts": {
-    "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-project-template/"
+    "start": "parcel src/*.html --cache-dir ./src/cache --no-source-maps",
+    "watch": "parcel watch ./src/*.html --dist-dir dist --cache-dir ./src/cache --no-source-maps",
+    "build": "parcel build ./src/*.html --public-url /goit-js-hw-10/ --dist-dir build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
+    "url": "git+https://github.com/fxhxyz4/goit-js-hw-10.git"
   },
-  "keywords": [],
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "keywords": [
+    "parceljs",
+    "sass",
+    "posthtml"
+  ],
+  "author": "fxhxyz4 <fxhxyz@proton.me> (https://fxhxyz.vercel.app/)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/goitacademy/parcel-project-template/issues"
+    "url": "https://github.com/fxhxyz4/goit-js-hw-10/issues"
   },
   "dependencies": {
-    "modern-normalize": "^1.1.0"
+    "flatpickr": "^4.6.13",
+    "modern-normalize": "^1.1.0",
+    "notiflix": "^3.2.6"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",
