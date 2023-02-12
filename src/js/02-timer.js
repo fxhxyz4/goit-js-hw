@@ -41,7 +41,7 @@ function onSelect(selectedDates) {
     btnEl.setAttribute('disabled', '');
     return;
   } else {
-    myFunc();
+    updateTime();
   }
 
   if (btnEl.hasAttribute('disabled')) {
@@ -50,7 +50,7 @@ function onSelect(selectedDates) {
   }
 }
 
-function myFunc() {
+function updateTime() {
   const dateObj = convertMs(selectedDate - Date.now());
   console.log(dateObj);
   const { days, hours, minutes, seconds } = dateObj;
@@ -68,7 +68,7 @@ btnEl.addEventListener('click', e => {
 
     btnEl.setAttribute('disabled', '');
 
-    myFunc();
+    updateTime();
   }, INTERVAL_VALUE);
 });
 
