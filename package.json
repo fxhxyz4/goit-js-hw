@@ -6,7 +6,7 @@
   "scripts": {
     "start": "parcel src/*.html",
     "watch": "parcel watch ./src/*.html --dist-dir dist --cache-dir ./src/cache --no-source-maps",
-    "build": "parcel build ./src/*.html --public-url /goit-js-hw-09/ --dist-dir build --no-source-maps"
+    "build": "parcel build ./src/*.html --public-url /goit-js-hw-09/ --dist-dir build"
   },
   "repository": {
     "type": "git",
