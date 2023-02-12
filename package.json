@@ -4,7 +4,7 @@
   "description": "goit-js-hw-09",
   "homepage": "https://fxhxyz.vercel.app/",
   "scripts": {
-    "start": "parcel src/*.html",
+    "start": "parcel src/*.html -cache-dir ./src/cache --no-source-maps",
     "watch": "parcel watch ./src/*.html --dist-dir dist --cache-dir ./src/cache --no-source-maps",
     "build": "parcel build ./src/*.html --public-url /goit-js-hw-09/ --dist-dir build"
   },
