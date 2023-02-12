@@ -3,15 +3,9 @@ console.clear();
 import { Notify } from 'notiflix';
 
 const form = document.querySelector('.form');
-// const input = document.querySelectorAll('input[type=number]');
 const inputDelay = document.querySelector('input[name=delay');
 const inputStep = document.querySelector('input[name=step]');
 const inputAmount = document.querySelector('input[name=amount]');
-const btn = document.querySelector('button[type=submit]');
-
-form.addEventListener('submit', e => {
-  e.preventDefault();
-});
 
 function createPromise(position, delay) {
   const shouldResolve = Math.random() > 0.3;
@@ -27,7 +21,9 @@ function createPromise(position, delay) {
   });
 }
 
-btn.addEventListener('click', e => {
+form.addEventListener('submit', e => {
+  e.preventDefault();
+
   let delay = Number(inputDelay.value);
   let delayStep = Number(inputStep.value);
   let delayAmount = Number(inputAmount.value);
@@ -35,12 +31,13 @@ btn.addEventListener('click', e => {
   for (let i = 0; i < delayAmount; i++) {
     createPromise(i, delay)
       .then(({ position, delay }) => {
-        Notify.success(`success promise ${position}, delay ${delay}ms`);
+        Notify.success(`success promise ${position} delay ${delay}ms`);
       })
       .catch(({ position, delay }) => {
-        Notify.failure(`failure promise ${position}, delay ${delay}ms`);
+        Notify.failure(`failure promise ${position} delay ${delay}ms`);
       });
+    delay += delayStep;
   }
 
-  delay += delayStep;
+  form.reset();
 });

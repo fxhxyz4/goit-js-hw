@@ -40,7 +40,9 @@ function onSelect(selectedDates) {
     Report.failure('Please choose a date in the future');
     btnEl.setAttribute('disabled', '');
     return;
-  } else {
+  }
+
+  if (selectedDate > currentDate) {
     updateTime();
   }
 
@@ -65,6 +67,12 @@ btnEl.addEventListener('click', e => {
   intervalId = setInterval(() => {
     const deltaTime = selectedDate - Date.now();
     const deltaInSeconds = Number(((deltaTime % 60000) / 1000).toFixed(0));
+
+    if (deltaInSeconds <= 0) {
+      clearInterval(intervalId);
+      btnEl.setAttribute('disabled', '');
+      Report.success(`timer stopped`);
+    }
 
     btnEl.setAttribute('disabled', '');
 
