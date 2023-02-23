@@ -1,0 +1,32 @@
+.header {
+  background-color: #4580ff;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button[type='submit'] {
+  border: none;
+  background-color: #4580ff;
+  color: rgb(65, 65, 65);
+  fill: none;
+}
+
+input[name='searchQuery'] {
+  padding: 10px 10px 10px 10px;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  width: 270px;
+}
+
+.search-form {
+  position: relative;
+}
+
+.fa-magnifying-glass {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+}
