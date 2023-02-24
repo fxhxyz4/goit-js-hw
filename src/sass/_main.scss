@@ -1,4 +1,35 @@
+.main {
+  margin: 0 auto;
+  text-align: center;
+}
+
 .is-hidden {
   display: none;
   pointer-events: none;
+}
+
+.photo-card {
+  display: inline-block;
+  border-radius: 6px;
+  border: 1px solid black;
+  margin-right: 15px;
+  margin-bottom: 15px;
+
+  &:nth-child(3) {
+    margin-right: 0;
+  }
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.load-more {
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: #80fff4ee;
+  cursor: pointer;
 }
