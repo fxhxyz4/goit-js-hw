@@ -1,7 +1,7 @@
 {
-  "name": "goit-js-hw-11",
+  "name": "goit-js-hw",
   "version": "2.0.0",
-  "description": "goit-js-hw-11",
+  "description": "goit-js-hw",
   "homepage": "https://fxhxyz.vercel.app",
   "scripts": {
     "start": "parcel src/*.html",
