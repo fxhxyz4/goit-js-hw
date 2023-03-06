@@ -14,8 +14,7 @@
   },
   "keywords": [
     "parceljs",
-    "sass",
-    "posthtml"
+    "sass"
   ],
   "author": "fxhxyz4 <fxhxyz@proton.me> (https://fxhxyz.vercel.app/)",
   "license": "ISC",
