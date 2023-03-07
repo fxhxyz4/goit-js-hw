@@ -1,16 +1,16 @@
 {
-  "name": "goit-js-hw-10",
+  "name": "goit-js-hw",
   "version": "2.0.1",
-  "description": "goit-js-hw-10",
+  "description": "goit-js-hw",
   "homepage": "https://fxhxyz.vercel.app/",
   "scripts": {
     "start": "parcel src/*.html --cache-dir ./src/cache --no-source-maps",
     "watch": "parcel watch ./src/*.html --dist-dir dist --cache-dir ./src/cache --no-source-maps",
-    "build": "parcel build ./src/*.html --public-url /goit-js-hw-10/ --dist-dir build"
+    "build": "parcel build ./src/*.html --public-url /goit-js-hw/ --dist-dir build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fxhxyz4/goit-js-hw-10.git"
+    "url": "git+https://github.com/fxhxyz4/goit-js-hw.git"
   },
   "keywords": [
     "parceljs",
@@ -19,7 +19,7 @@
   "author": "fxhxyz4 <fxhxyz@proton.me> (https://fxhxyz.vercel.app/)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/fxhxyz4/goit-js-hw-10/issues"
+    "url": "https://github.com/fxhxyz4/goit-js-hw/issues"
   },
   "dependencies": {
     "flatpickr": "^4.6.13",
