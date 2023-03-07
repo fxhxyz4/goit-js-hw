@@ -5,17 +5,17 @@
   "homepage": "https://fxhxyz.vercel.app",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /goit-js-hw-11/ --dist-dir build"
+    "build": "parcel build src/*.html --public-url /goit-js-hw/ --dist-dir build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fxhxyz4/goit-js-hw-11.git"
+    "url": "git+https://github.com/fxhxyz4/goit-js-hw.git"
   },
   "keywords": [],
   "author": "fxhxyz <fxhxyz@proton.me> (https://fxhxyz.vercel.app)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/fxhxyz4/goit-js-hw-11/issues"
+    "url": "https://github.com/fxhxyz4/goit-js-hw/issues"
   },
   "dependencies": {
     "axios": "^1.3.4",
